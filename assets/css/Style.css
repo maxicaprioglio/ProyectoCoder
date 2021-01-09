@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* importaciones */
+/* variable */
+/* header */
+.contenedor-header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2; }
+  .contenedor-header img {
+    float: left;
+    max-block-size: 40px;
+    margin: 5px; }
+
+.contenedor-header-menu {
+  width: 100%;
+  font-family: 'Lobster';
+  text-align: right;
+  line-height: 50px; }
+  .contenedor-header-menu .titulos-item {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px; }
+    .contenedor-header-menu .titulos-item a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+      .contenedor-header-menu .titulos-item a:hover {
+        color: coral; }
+
+.subcontenedor-header-menu {
+  display: none;
+  list-style: none;
+  line-height: 30px; }
+  .subcontenedor-header-menu a {
+    margin-left: -20px;
+    margin-right: 15px; }
+
+.contenedor-header-menu li:hover .subcontenedor-header-menu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: black;
+  text-align: left;
+  margin-top: -1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* animacion 
+    @keyframes logo_moverse {
+        0% { transform: rotateZ(0deg);}
+        25% { transform: rotateZ(5deg);}
+        50% {transform: rotateZ(0deg);}
+        75% { transform: rotateZ(-5deg);}
+        100% {transform: rotateZ(0deg);}
+    }
+    .animacion {
+        animation-name: logo_moverse;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 0s;
+    }
+*/
+.portada {
+  padding: 60px 30px 10px 30px;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Yellowtail', cursive; }
+  .portada h1 {
+    font-size: 30px; }
+  .portada p {
+    margin: 10px 20px; }
+
+.carrusel-portada {
+  padding: 0px 20%; }
+
+.estructura {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around; }
+  .estructura .contenedor-producto {
+    border: 1px solid black;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden; }
+    .estructura .contenedor-producto img {
+      width: 100%;
+      height: 100%;
+      color: 20% black; }
+    .estructura .contenedor-producto p {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      /* no se porque no esta visible */ }
+
+.titulo-producto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lobster', cursiva;
+  padding-top: 50px;
+  font-size: 50px;
+  text-shadow: 1px 2px violet; }
+
+.contenedor-productos {
+  width: 100%;
+  font-family: 'castoro';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .contenedor-productos .contenedor-card {
+    width: 250px;
+    padding: 5px;
+    margin: 5px 5px; }
+
+/* hacer que se vea la foto en grande */
+/* tranformacion 
+    
+    .ep:hover img {
+        transform: scale(1.2);
+    }
+    no se como hacer para que se agrande solo dentro del cuadro de la imagen*/
+/*footer*/
+footer {
+  width: 100%;
+  height: 3em;
+  background-color: slategrey;
+  font-family: sans-serif;
+  color: white; }
+  footer .contenedor {
+    display: flex;
+    justify-content: space-around; }
+    footer .contenedor p {
+      align-self: center;
+      align-items: stretch; }
+  footer .contenedor-contactos {
+    justify-content: space-around;
+    align-self: center;
+    align-items: stretch; }
+    footer .contenedor-contactos img {
+      width: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+  /*footer*/
+footer {   
+  width: 100%;
+  height: 3em;
+
+  background-color: slategrey;
+  font-family: sans-serif;
+  color: white;   
+    .contenedor {
+
+
+      display: flex;
+      justify-content: space-around;  
+      p {
+
+       
+      align-self: center;     
+      align-items: stretch;
+      }
+    }  
+    .contenedor-contactos {
+      justify-content: space-around;
+         
+        align-self: center;     
+        align-items: stretch;
+
+      img {
+        width: 1.5em;
+        
+        }
+    }
+  }      
