@@ -2,53 +2,48 @@
 .estructura {
     display: flex;
     justify-content: center;
-    padding-right: 30px;
     flex-wrap: wrap;
-    padding-top: 65px;
-    margin-bottom: 90px; 
-    figure {
+    width: 100%;
+    padding: 50px 20px 10px 20px;
+
+    
+    .contenedor-prod {
         display: flex;
         position: relative;
         justify-content: center;
-        height: 180px;
-        width: 180px;
+       
         border-radius: 6px;
+        margin: 20px;
         overflow: hidden;
-        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+        
     
 
-        }
-    }
+    .caja-estructura {
+        height: 180px;
+        width: 180px;
+       
+        
+        img { 
+            width: 100%;
+            height: 100%;     
 
-    .contenedor-prod {
-        border:  1px solid black;
-        width: 200px;
-        height: 200px;
-        padding: 5px;
-        margin: 20px;
-        display: block;
-        position: relative;
-        overflow: hidden; 
-            img {      
-                width: 100%;
-                height: 100%;
-                transition: all 500ms ease-out;
-                z-index: 0;
-            }
-            .filtro-texto  p { 
+        
+                }
+            .filtro-texto { 
                 position: absolute;
                 top: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(253, 250, 105, 0.5);
-                transition: all 500ms ease-out;
-                opacity: 0;
+                background: black;
                 visibility: hidden;
                 text-align: center;
                 font-family: 'Lobster', sans-serif;
-                font-size: 15px; 
-                z-index: 1;}
+                font-size: 26px; 
+                }
         }
+    }
+    }
     
     
 
