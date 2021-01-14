@@ -88,34 +88,43 @@
   width: 100%;
   padding: 50px 20px 10px 20px; }
   .estructura .contenedor-prod {
-    border-radius: 6px;
+    border-radius: 8px;
+    height: 180px;
+    width: 180px;
     margin: 20px;
     overflow: hidden;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); }
     .estructura .contenedor-prod .caja-estructura {
-      height: 180px;
-      width: 180px;
-      display: block; }
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: inline-block; }
       .estructura .contenedor-prod .caja-estructura img {
+        position: absolute;
         width: 100%;
-        height: 100%;
-        transition: all 500ms ease-out;
-        z-index: 0; }
+        height: 100%; }
       .estructura .contenedor-prod .caja-estructura .filtro-texto {
         position: absolute;
-        top: 0;
-        background: gray;
-        transition: all 500ms ease-out;
-        opacity: 0;
-        visibility: hidden; }
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.2); }
         .estructura .contenedor-prod .caja-estructura .filtro-texto p {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
           text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 15px; }
-
-.caja-estructura:hover > .capa {
-  opacity: 1;
-  visibility: visible; }
+          top: 70px;
+          text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
+          font-family: 'Yellowtail', cursive;
+          color: #ffff;
+          font-size: 24px; }
+      .estructura .contenedor-prod .caja-estructura:hover p {
+        color: #ff0dbf;
+        text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f; }
 
 .titulo-producto {
   width: 100%;
