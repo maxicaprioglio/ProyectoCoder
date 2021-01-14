@@ -123,8 +123,7 @@
           color: #ffff;
           font-size: 24px; }
       .estructura .contenedor-prod .caja-estructura:hover p {
-        color: #ff0dbf;
-        text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f; }
+        color: #ffdbf5; }
 
 .titulo-producto {
   width: 100%;
