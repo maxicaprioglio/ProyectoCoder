@@ -1,31 +1,31 @@
   /*footer*/
 footer {   
   width: 100%;
-  
-  background-color: slategrey;
+  height: 30px;
+  background-color: black;
+  bottom: 0;
+  position: fixed;
   font-family: sans-serif;
   color: white;   
-    .contenedor {
-
-
-      display: flex;
-      justify-content: space-around;  
-      span {
-
-       
+  .contenedor {
+    display: flex;
+    position: relative;
+    justify-content: space-around;  
+    span {       
       align-self: center;     
       align-items: stretch;
-      }
-    }  
-    .contenedor-contactos {
-      justify-content: space-around;
-         
-        align-self: center;     
-        align-items: stretch;
-
-      img {
-        width: 1.5em;
-        
-        }
     }
-  }      
+    .contenedor-contactos {
+      width: 20%;
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      align-self: center;   
+      img {
+        margin-top: 3px;
+        
+        width: 1.5em;
+      }
+    }
+  }
+}      

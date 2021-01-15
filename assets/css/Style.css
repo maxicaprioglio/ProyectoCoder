@@ -86,7 +86,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 50px 20px 10px 20px; }
+  padding: 50px 20px 30px 20px; }
   .estructura .contenedor-prod {
     border-radius: 8px;
     height: 180px;
@@ -135,6 +135,7 @@
 
 .contenedor-productos {
   width: 100%;
+  margin-bottom: 30px;
   font-family: 'castoro';
   display: flex;
   flex-wrap: wrap;
@@ -154,20 +155,27 @@
 /*footer*/
 footer {
   width: 100%;
-  background-color: slategrey;
+  height: 30px;
+  background-color: black;
+  bottom: 0;
+  position: fixed;
   font-family: sans-serif;
   color: white; }
   footer .contenedor {
     display: flex;
+    position: relative;
     justify-content: space-around; }
     footer .contenedor span {
       align-self: center;
       align-items: stretch; }
-  footer .contenedor-contactos {
-    justify-content: space-around;
-    align-self: center;
-    align-items: stretch; }
-    footer .contenedor-contactos img {
-      width: 1.5em; }
+    footer .contenedor .contenedor-contactos {
+      width: 20%;
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      align-self: center; }
+      footer .contenedor .contenedor-contactos img {
+        margin-top: 3px;
+        width: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
