@@ -44,8 +44,8 @@
       <nav class="contenedor-header">
         <img src="../assets/imagen/estrura/logo2.png" alt="Nuestro gran logo">
         <ul class="contenedor-header-menu">
-            <li class="titulos-item"><a href="#inicio">Inicio</a></li>
-            <li class="titulos-item"><a href="#produc">Productos</a>
+            <li class="titulos-item"><a href="../index.html#inicio">Inicio</a></li>
+            <li class="titulos-item"><a href="../index.html#produc">Productos</a>
                 <ul class="subcontenedor-header-menu">
                   <li><a href="../views/anillos.html">Anillos</a></li>
                   <li><a href="../views/aros.html">Aros</a></li>
@@ -54,21 +54,23 @@
                   <li><a href="../views/accesorios.html">Accesorios</a></li>
                 </ul>
             </li>
-            <li class="titulos-item"><a href="#contacto">Contacto</a></li>
+            <li class="titulos-item"><a href="../views/contacto.html">Contacto</a></li>
           </ul>
       </nav>
   </header>
   
  
    <!-- seccion de contacto -->
-  <form action="">
-      <h2>Contacto</h2>
-      <input type="text" name="nombre" placeholder="nombre">
-      <input type="text" name="correo" placeholder="correo">
-      <input type="text" name="telefono" placeholder="telefono">
-      <textarea name="mensaje" placeholder="Escriba aqui si mensaje"></textarea>
-      <input type="button" value="ENVIAR" id="botton">
-  </form>
+    <section class="fondo">
+        <form action="enviar.php" method="POST">
+            <h2>Contacto</h2>
+            <input type="text" name="nombre" placeholder="nombre" required>
+            <input type="text" name="correo" placeholder="correo" required>
+            <input type="text" name="telefono" placeholder="telefono" required>
+            <textarea name="mensaje" placeholder="Escriba aqui si mensaje" required></textarea>
+            <input type="button" value="ENVIAR" id="botton" required>
+        </form>
+    </section>
  
 
    <!-- fin seccion de contacto -->
@@ -82,6 +84,6 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 </html>
