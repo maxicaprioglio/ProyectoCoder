@@ -6,68 +6,6 @@
 /* importaciones */
 /* variable */
 /* header */
-.contenedor-header {
-  background-color: black;
-  display: flex;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  position: fixed;
-  z-index: 2; }
-  .contenedor-header img {
-    float: left;
-    max-block-size: 40px;
-    margin: 5px; }
-
-.contenedor-header-menu {
-  width: 100%;
-  font-family: 'Lobster';
-  text-align: right;
-  line-height: 50px; }
-  .contenedor-header-menu .titulos-item {
-    position: relative;
-    display: inline-block;
-    margin: 0px 10px; }
-    .contenedor-header-menu .titulos-item a {
-      text-decoration: none;
-      color: white;
-      font-size: 20px; }
-      .contenedor-header-menu .titulos-item a:hover {
-        color: coral; }
-
-.subcontenedor-header-menu {
-  display: none;
-  list-style: none;
-  line-height: 30px; }
-  .subcontenedor-header-menu a {
-    margin-left: 10px;
-    margin-right: 15px; }
-
-.contenedor-header-menu li:hover .subcontenedor-header-menu {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  background-color: black;
-  text-align: left !important;
-  margin-top: -1px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-/* animacion 
-    @keyframes logo_moverse {
-        0% { transform: rotateZ(0deg);}
-        25% { transform: rotateZ(5deg);}
-        50% {transform: rotateZ(0deg);}
-        75% { transform: rotateZ(-5deg);}
-        100% {transform: rotateZ(0deg);}
-    }
-    .animacion {
-        animation-name: logo_moverse;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-delay: 0s;
-    }
-*/
 .portada {
   padding: 60px 30px 10px 30px;
   width: auto;
@@ -89,6 +27,8 @@
   width: 100%;
   padding: 50px 20px 30px 20px; }
   .estructura .contenedor-prod {
+    /*correccion de boostrap */
+    padding-left: 0px;
     border-radius: 8px;
     height: 180px;
     width: 180px;
@@ -225,3 +165,75 @@ textarea {
 @media (max-width: 480px) {
   form {
     width: 100%; } }
+
+.contenedor-header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  /*correccion de boostrap */
+  font-size: 17px;
+  font-weight: 0;
+  color: white; }
+  .contenedor-header img {
+    float: left;
+    max-block-size: 40px;
+    margin: 5px; }
+
+.contenedor-header-menu {
+  width: 100%;
+  font-family: 'Lobster';
+  text-align: right;
+  line-height: 50px;
+  /*correccion de boostrap */
+  margin-bottom: 1rem;
+  padding-left: 0px; }
+  .contenedor-header-menu .titulos-item {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+    /*correccion de boostrap */
+    padding-left: 0px; }
+    .contenedor-header-menu .titulos-item a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+      .contenedor-header-menu .titulos-item a:hover {
+        color: coral; }
+
+.subcontenedor-header-menu {
+  display: none;
+  list-style: none;
+  line-height: 30px; }
+  .subcontenedor-header-menu a {
+    margin-left: 10px;
+    margin-right: 15px; }
+
+.contenedor-header-menu li:hover .subcontenedor-header-menu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: black;
+  text-align: left !important;
+  margin-top: -1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* animacion 
+    @keyframes logo_moverse {
+        0% { transform: rotateZ(0deg);}
+        25% { transform: rotateZ(5deg);}
+        50% {transform: rotateZ(0deg);}
+        75% { transform: rotateZ(-5deg);}
+        100% {transform: rotateZ(0deg);}
+    }
+    .animacion {
+        animation-name: logo_moverse;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 0s;
+    }
+*/

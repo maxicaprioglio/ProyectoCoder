@@ -7,6 +7,11 @@
     position: fixed;
     z-index: 2;
 
+    /*correccion de boostrap */
+    font-size: 17px;
+    font-weight: 0;
+    color: white;
+    
     img {
         float: left;
         max-block-size: 40px;
@@ -15,19 +20,26 @@
 }
     
 .contenedor-header-menu { 
+    
     width: 100%;
     font-family: 'Lobster'; 
     text-align: right;
     line-height: 50px;
+    /*correccion de boostrap */
+    margin-bottom: 1rem;
+    padding-left: 0px;
+
 
 
    
     .titulos-item {
        position: relative;
        display: inline-block;
+       margin: 0px 10px;
+       /*correccion de boostrap */
+       padding-left: 0px;
 
        
-       margin: 0px 10px;
         a {
             text-decoration: none;
             color: white;

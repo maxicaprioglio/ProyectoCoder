@@ -6,6 +6,9 @@
     width: 100%;    
     padding: 50px 20px 30px 20px;    
     .contenedor-prod {
+      /*correccion de boostrap */      
+        padding-left: 0px;
+        
         border-radius: 8px;
         height: 180px;
         width: 180px;
