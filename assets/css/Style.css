@@ -89,7 +89,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 10; }
+  z-index: 1; }
 
 .carousel-indicators li {
   display: inline-block;
@@ -233,9 +233,6 @@ footer {
     display: flex;
     position: relative;
     justify-content: space-around; }
-    footer .contenedor span {
-      align-self: center;
-      align-items: stretch; }
     footer .contenedor .contenedor-contactos {
       width: 20%;
       display: flex;
@@ -245,6 +242,104 @@ footer {
       footer .contenedor .contenedor-contactos img {
         margin-top: 3px;
         width: 1.5em; }
+
+/*-- Animacion pranter --*/
+.pronter {
+  display: flex;
+  width: 260px;
+  height: 28px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+
+@keyframes logo_moverse1 {
+  0% {
+    transform: translateY(30px); }
+  1% {
+    transform: translateY(30px); }
+  5% {
+    transform: translateY(0px); }
+  20% {
+    transform: translateY(0px); }
+  24% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(-30px); } }
+
+@keyframes logo_moverse2 {
+  0% {
+    transform: translateY(30px); }
+  26% {
+    transform: translateY(30px); }
+  30% {
+    transform: translateY(0px); }
+  45% {
+    transform: translateY(0px); }
+  49% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(-30px); } }
+
+@keyframes logo_moverse3 {
+  0% {
+    transform: translateY(30px); }
+  51% {
+    transform: translateY(30px); }
+  55% {
+    transform: translateY(0px); }
+  70% {
+    transform: translateY(0px); }
+  74% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(-30px); } }
+
+@keyframes logo_moverse4 {
+  0% {
+    transform: translateY(30px); }
+  76% {
+    transform: translateY(30px); }
+  80% {
+    transform: translateY(0px); }
+  95% {
+    transform: translateY(0px); }
+  99% {
+    transform: translateY(-30px); }
+  100% {
+    transform: translateY(-30px); } }
+
+.pronter-primero {
+  position: absolute;
+  animation-name: logo_moverse1;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s; }
+
+.pronter-segundo {
+  position: absolute;
+  animation-name: logo_moverse2;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s; }
+
+.pronter-tercero {
+  position: absolute;
+  animation-name: logo_moverse3;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s; }
+
+.pronter-cuarto {
+  position: absolute;
+  animation-name: logo_moverse4;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s; }
+
+.link {
+  text-decoration: none;
+  color: white; }
 
 .fondo {
   height: 750px;
