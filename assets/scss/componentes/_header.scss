@@ -1,16 +1,13 @@
 .contenedor-header {
-    background-color: black;
+    background-color: $color-header-background;
     display: flex;
     width: 100%;
     height: 50px;
     top: 0;
     position: fixed;
     z-index: 2;
-
-    /*correccion de boostrap */
     font-size: 17px;
-    font-weight: 0;
-    color: white;
+    color: $color-header-text;
     
     img {
         float: left;
@@ -25,27 +22,16 @@
     font-family: 'Lobster'; 
     text-align: right;
     line-height: 50px;
-    /*correccion de boostrap */
-    margin-bottom: 1rem;
-    padding-left: 0px;
-
-
-
-   
-    .titulos-item {
+   .titulos-item {
        position: relative;
        display: inline-block;
        margin: 0px 10px;
-       /*correccion de boostrap */
-       padding-left: 0px;
-
-       
         a {
             text-decoration: none;
-            color: white;
+            color: $color-header-text;
             font-size: 20px;
                 &:hover {
-                    color: coral;
+                    color: $color-header-hover;
                 }
         }
     }
@@ -66,25 +52,9 @@
     display: flex;  
     position: absolute;
     flex-direction: column;
-    background-color: black;
-    text-align: left !important; 
-    margin-top: -1px;
+    background-color: $color-header-background;
+    text-align: left; 
+    margin-top: -2px;
     border-bottom-left-radius: 5px ;
     border-bottom-right-radius: 5px;    
 }
-
-    /* animacion 
-    @keyframes logo_moverse {
-        0% { transform: rotateZ(0deg);}
-        25% { transform: rotateZ(5deg);}
-        50% {transform: rotateZ(0deg);}
-        75% { transform: rotateZ(-5deg);}
-        100% {transform: rotateZ(0deg);}
-    }
-    .animacion {
-        animation-name: logo_moverse;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-delay: 0s;
-    }
-*/
