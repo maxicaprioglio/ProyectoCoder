@@ -6,13 +6,12 @@
     font-family:  'Yellowtail', cursive;
     color: $color-portada-text;    
     h1 {
-        
         font-size: 30px;
     }
     p {
+        font-size: 20px;
         margin: 10px 20px;
     }
-
 }
 
 .correccion {padding-top: 24px;
@@ -49,19 +48,16 @@
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
+    background: $color-carrousel-background;
     border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+    color: $color-carrousel;
+
     font-size: 40px;
     height: 40px;
     line-height: 35px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(0, -50%);
     cursor: pointer;
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
@@ -77,8 +73,8 @@
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    background: $color-carrousel-background-hover;
+    color: $color-carrousel-hover;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -105,14 +101,14 @@
 }
 
 .carousel-bullet {
-    color: #fff;
+    color: $color-carrousel;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
 .carousel-bullet:hover {
-    color: #aaaaaa;
+    color: $color-carrousel-hover;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,

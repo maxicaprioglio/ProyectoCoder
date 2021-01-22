@@ -32,7 +32,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: $color-secciones-background;
 
                 p {
                     display: block;
@@ -51,13 +51,13 @@
                         0 0 140px rgba(38, 104, 127, 1),
                         0 0 180px rgba(38, 104, 127, 1);
                     font-family: 'Yellowtail', cursive;
-                    color: #ffff;
+                    color: $color-secciones-text;
                     font-size: 24px;
                 }
             }
 
             &:hover p {
-                color: hsl(316, 100%, 93%);
+                color: $color-secciones-text-hover;
             }
         }
     }
