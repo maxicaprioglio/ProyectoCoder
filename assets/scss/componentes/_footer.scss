@@ -1,71 +1,70 @@
-  /*footer*/
+/* footer con el pronter */
 footer {
   width: 100%;
-  height: 30px;
-  background-color:$color-footer-backgroun;
+  background-color: $color-footer-backgroun;
   bottom: 0;
   position: fixed;
-  font-family: sans-serif;
+  align-self: center;
+  font-family: $footer-font;
   color: $color-footer-text;
+  font-size: $footer-font-size;
   .contenedor {
     display: flex;
     position: relative;
     justify-content: space-around;
     .contenedor-contactos {
-      width: 20%;
+      width: 100px;
+      height: $footer-height;
       display: flex;
       position: relative;
       justify-content: space-around;
-      align-self: center;
+      align-items: center;
       img {
         margin-top: 3px;
-        width: 1.5em;
+        width: 22px;
       }
     }
   }
 }
-/*-- Animacion pranter --*/
+/*-- Animacion pronter --*/
 .pronter {
   display: flex;
-  width: 260px;
-  height: 28px;
+  width: 500px;
   position: relative;
   align-items: center;
   justify-content: center;
   overflow: hidden;
- }
-
+  width: 500px;
+}
 @keyframes logo_moverse1 {
-0% {  transform: translateY(30px);}
-1% {  transform: translateY(30px);}
+0% {  transform: translateY(200%);}
 5% {  transform: translateY(0px); }
 20% { transform: translateY(0px); }
-24% { transform: translateY(-30px);}
-100% {transform: translateY(-30px);}
+25% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
 }
 @keyframes logo_moverse2 {
-0% {  transform: translateY(30px);}
-26% { transform: translateY(30px);}
+0% {  transform: translateY(200%);}
+25% { transform: translateY(200%);}
 30% { transform: translateY(0px); }
 45% { transform: translateY(0px); }
-49% { transform: translateY(-30px);}
-100% {transform: translateY(-30px);}
+50% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
 }
 @keyframes logo_moverse3 {
-0% {  transform: translateY(30px);}
-51% { transform: translateY(30px);}
+0% {  transform: translateY(200%);}
+50% { transform: translateY(200%);}
 55% { transform: translateY(0px); }
 70% { transform: translateY(0px); }
-74% { transform: translateY(-30px);}
-100% {transform: translateY(-30px);}
+75% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
 }
 @keyframes logo_moverse4 {
-0% {  transform: translateY(30px);}
-76% { transform: translateY(30px);}
+0% {  transform: translateY(200%);}
+75% { transform: translateY(200%);}
 80% { transform: translateY(0px); }
 95% { transform: translateY(0px); }
-99% { transform: translateY(-30px);}
-100% {transform: translateY(-30px);}
+100% {transform: translateY(-200%);}
 }
 .pronter-primero {
   position: absolute;
@@ -95,9 +94,25 @@ footer {
   animation-duration: 40s;
   animation-delay: 0s;
 }
-
 .link {
   text-decoration: none;
   color: $color-footer-text;
-
 }
+/* media query */
+@media (max-width: 360px) {
+  footer {
+    font-size: 10px;
+      }
+  .pronter {
+      width: 220px;}
+    
+}
+@media (min-width: 361px) and (max-width: 639px) {
+  footer {
+    font-size: 12px;
+  }
+  .pronter {
+      width: 260px;}
+  
+}
+

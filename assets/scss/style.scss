@@ -2,8 +2,9 @@
     padding: 0;
     box-sizing: border-box;
     }
-
-/* importaciones */
+ body {
+    background-image: url(/assets/imagen/portada/seccion-productos/arena-playa.png); 
+}
 
 @import "base/color";
 @import "base/font";

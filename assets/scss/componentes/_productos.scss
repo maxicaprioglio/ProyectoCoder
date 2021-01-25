@@ -1,10 +1,12 @@
+/* titulo y card de cada produto */
+
 .titulo-producto {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-family: 'Lobster', cursiva;
-  padding-top: 50px;
-  font-size: 50px;
+  font-family: $productos-titulo-font;
+  margin-top: $header-height;
+  font-size: $productos-titulo-size;
   color: $color-productos-titulo;
   text-shadow: 1px 2px $color-productos-titulo-shadow;
 }
@@ -13,7 +15,8 @@
   width: 100%;
   margin-bottom: 30px;
   margin-top: 20px;
-  font-family: 'castoro';
+  padding: 0px;
+  font-family: $productos-card-font;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -21,7 +24,8 @@
 
 .card {
   margin-bottom: 20px;
-  width: 302px;
+  background-color: white;
+  width: 300px;
   height: 380px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -35,14 +39,14 @@
 .container {
   text-align: center;
   color: $color-productos-card-text;
+  font-size: $productos-card-size;
   padding: 5px 16px;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 302px;
-  height: 302px;
-  border: 1px solid #f1f1f1;
+  width: 300px;
+  height: 300px;
   perspective: 1000px;
 }
 

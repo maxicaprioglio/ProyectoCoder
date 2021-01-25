@@ -1,26 +1,30 @@
+/* portada y carrousel */
 .portada {
-    padding: 60px 30px 10px 30px;
+    margin-top: $header-height;
+    padding: 10px 30px 10px 30px;
     width: auto;
     justify-content: center;
     text-align: center;
-    font-family:  'Yellowtail', cursive;
-    color: $color-portada-text;    
+    font-family: $portada-font;
+    color: $color-portada-text;   
     h1 {
-        font-size: 30px;
+        font-size: $portada-titulo-size;
     }
     p {
-        font-size: 20px;
+        font-size: $portada-parrafo-size;
         margin: 10px 20px;
     }
 }
 
-.correccion {padding-top: 24px;
+.correccion {
+    padding-top: 24px;
 }
 .carousel {
     padding: 0;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
+    
 }
 
 .carousel-inner {
@@ -51,7 +55,6 @@
     background: $color-carrousel-background;
     border-radius: 50%;
     color: $color-carrousel;
-
     font-size: 40px;
     height: 40px;
     line-height: 35px;
