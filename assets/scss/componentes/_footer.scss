@@ -9,6 +9,7 @@ footer {
   font-family: $footer-font;
   color: $color-footer-text;
   font-size: $footer-font-size;
+  z-index: 11;
   .contenedor {
     display: flex;
     position: relative;
