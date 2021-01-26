@@ -1,0 +1,15 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+ body {
+    background-image: url(../imagen/portada/seccion-productos/arena-playa.png); 
+}
+@import "base/color";
+@import "base/font";
+@import "componentes/header";
+@import "componentes/portada";
+@import "componentes/secciones";
+@import "componentes/productos";
+@import "componentes/contacto";
+@import "componentes/footer";
