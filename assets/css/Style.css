@@ -41,8 +41,9 @@ body {
   display: none;
   list-style: none; }
   .subcontenedor-header-menu a {
-    margin: 10px 15px 0px 10px;
-    line-height: 35px; }
+    margin-left: 10px;
+    margin-right: 15px;
+    line-height: 50px; }
 
 .contenedor-header-menu li:hover .subcontenedor-header-menu {
   display: flex;
@@ -59,7 +60,7 @@ body {
   .contenedor-header {
     font-size: 16px; } }
 
-@media (min-width: 321px) and (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 420px) {
   .contenedor-header {
     font-size: 20px; } }
 
@@ -209,11 +210,11 @@ body {
           position: absolute;
           width: 100%;
           text-align: center;
-          top: 108px;
+          top: 92px;
           text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
           font-family: "Yellowtail", cursive;
           color: #ffff;
-          font-size: 24px; }
+          font-size: 40px; }
       .estructura .contenedor-prod .caja-estructura:hover p {
         color: #ffdbf5; }
 
@@ -354,16 +355,17 @@ footer {
     display: flex;
     position: relative;
     justify-content: space-around; }
-    footer .contenedor .contenedor-contactos {
-      width: 100px;
-      height: 30px;
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      align-items: center; }
-      footer .contenedor .contenedor-contactos img {
-        margin-top: 3px;
-        width: 22px; }
+
+.contenedor-contactos {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center; }
+  .contenedor-contactos img {
+    margin-top: 3px;
+    width: 22px; }
 
 /*-- Animacion pronter --*/
 .pronter {
@@ -464,10 +466,14 @@ footer {
   footer {
     font-size: 10px; }
   .pronter {
-    width: 220px; } }
+    width: 220px; }
+  .contenedor-contactos {
+    width: 100px; } }
 
-@media (min-width: 361px) and (max-width: 639px) {
+@media (min-width: 360px) and (max-width: 639px) {
   footer {
     font-size: 12px; }
   .pronter {
-    width: 260px; } }
+    width: 260px; }
+  .contenedor-contactos {
+    width: 100px; } }

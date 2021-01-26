@@ -37,8 +37,10 @@
 .subcontenedor-header-menu {
     display: none;
     list-style: none;
+    
     a {       
-        margin: 10px 15px 0px 10px;
+        margin-left: 10px;
+        margin-right: 15px;
         line-height: $header-line-height;
         }
 }
@@ -59,7 +61,7 @@
       font-size: 16px;
         }
     }
-  @media (min-width: 321px) and (max-width: 420px) {
+  @media (min-width: 320px) and (max-width: 420px) {
     .contenedor-header {
       font-size: 20px;
     }

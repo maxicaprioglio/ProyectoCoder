@@ -1,3 +1,4 @@
+
 /* footer con el pronter */
 footer {
   width: 100%;
@@ -12,18 +13,18 @@ footer {
     display: flex;
     position: relative;
     justify-content: space-around;
-    .contenedor-contactos {
-      width: 100px;
-      height: $footer-height;
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-      align-items: center;
-      img {
-        margin-top: 3px;
-        width: 22px;
-      }
-    }
+  }
+}
+.contenedor-contactos {
+  width: 200px;
+  height: $footer-height;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    margin-top: 3px;
+    width: 22px;
   }
 }
 /*-- Animacion pronter --*/
@@ -101,18 +102,18 @@ footer {
 /* media query footer*/
 @media (max-width: 360px) {
   footer {
-    font-size: 10px;
-      }
+    font-size: 10px;}
   .pronter {
-      width: 220px;}
-    
+    width: 220px;}
+  .contenedor-contactos {
+    width: 100px;}
 }
-@media (min-width: 361px) and (max-width: 639px) {
+@media (min-width: 360px) and (max-width: 639px) {
   footer {
-    font-size: 12px;
-  }
+    font-size: 12px;}
   .pronter {
-      width: 260px;}
-  
+    width: 260px;}
+  .contenedor-contactos {
+    width: 100px;}
 }
 
