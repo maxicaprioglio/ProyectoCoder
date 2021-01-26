@@ -1,0 +1,118 @@
+/* footer con el pronter */
+footer {
+  width: 100%;
+  background-color: $color-footer-backgroun;
+  bottom: 0;
+  position: fixed;
+  align-self: center;
+  font-family: $footer-font;
+  color: $color-footer-text;
+  font-size: $footer-font-size;
+  .contenedor {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    .contenedor-contactos {
+      width: 100px;
+      height: $footer-height;
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        margin-top: 3px;
+        width: 22px;
+      }
+    }
+  }
+}
+/*-- Animacion pronter --*/
+.pronter {
+  display: flex;
+  width: 500px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 500px;
+}
+@keyframes logo_moverse1 {
+0% {  transform: translateY(200%);}
+5% {  transform: translateY(0px); }
+20% { transform: translateY(0px); }
+25% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
+}
+@keyframes logo_moverse2 {
+0% {  transform: translateY(200%);}
+25% { transform: translateY(200%);}
+30% { transform: translateY(0px); }
+45% { transform: translateY(0px); }
+50% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
+}
+@keyframes logo_moverse3 {
+0% {  transform: translateY(200%);}
+50% { transform: translateY(200%);}
+55% { transform: translateY(0px); }
+70% { transform: translateY(0px); }
+75% { transform: translateY(-200%);}
+100% {transform: translateY(-200%);}
+}
+@keyframes logo_moverse4 {
+0% {  transform: translateY(200%);}
+75% { transform: translateY(200%);}
+80% { transform: translateY(0px); }
+95% { transform: translateY(0px); }
+100% {transform: translateY(-200%);}
+}
+.pronter-primero {
+  position: absolute;
+  animation-name: logo_moverse1;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s;
+}
+.pronter-segundo {
+  position: absolute;
+  animation-name: logo_moverse2;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s;
+}
+.pronter-tercero {
+  position: absolute;
+  animation-name: logo_moverse3;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s;
+}
+.pronter-cuarto {
+  position: absolute;
+  animation-name: logo_moverse4;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+  animation-delay: 0s;
+}
+.link {
+  text-decoration: none;
+  color: $color-footer-text;
+}
+/* media query footer*/
+@media (max-width: 360px) {
+  footer {
+    font-size: 10px;
+      }
+  .pronter {
+      width: 220px;}
+    
+}
+@media (min-width: 361px) and (max-width: 639px) {
+  footer {
+    font-size: 12px;
+  }
+  .pronter {
+      width: 260px;}
+  
+}
+
