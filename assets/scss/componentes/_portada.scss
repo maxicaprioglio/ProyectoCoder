@@ -52,9 +52,9 @@
 }
 
 .carousel-control {
-    background: $color-carrousel-background;
+    background:  rgba(0, 0, 0, 0.28);
     border-radius: 50%;
-    color: $color-carrousel;
+    color: #fff;
     font-size: 40px;
     height: 40px;
     line-height: 35px;
@@ -76,8 +76,8 @@
 }
 
 .carousel-control:hover {
-    background: $color-carrousel-background-hover;
-    color: $color-carrousel-hover;
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -104,14 +104,14 @@
 }
 
 .carousel-bullet {
-    color: $color-carrousel;
+    color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
 .carousel-bullet:hover {
-    color: $color-carrousel-hover;
+    color: #aaaaaa;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
