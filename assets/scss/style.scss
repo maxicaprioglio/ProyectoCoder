@@ -5,15 +5,14 @@
  body {
     background-image: url(../imagen/portada/seccion-productos/arena-playa.png); 
 }
-
 @import "base/color";
 @import "base/font";
+@import "componentes/header";
 @import "componentes/portada";
 @import "componentes/secciones";
 @import "componentes/productos";
-@import "componentes/footer";
 @import "componentes/contacto";
-@import "componentes/header";
+@import "componentes/footer";
 
 
  

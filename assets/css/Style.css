@@ -6,6 +6,63 @@
 body {
   background-image: url(../imagen/portada/seccion-productos/arena-playa.png); }
 
+/* header */
+.contenedor-header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  font-size: 30px;
+  color: white; }
+  .contenedor-header img {
+    float: left;
+    max-block-size: 40px;
+    margin: 5px; }
+
+.contenedor-header-menu {
+  width: 100%;
+  font-family: "Lobster";
+  text-align: right;
+  align-self: center; }
+  .contenedor-header-menu .titulos-item {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px; }
+    .contenedor-header-menu .titulos-item a {
+      text-decoration: none;
+      color: white; }
+      .contenedor-header-menu .titulos-item a:hover {
+        color: violet; }
+
+.subcontenedor-header-menu {
+  display: none;
+  list-style: none; }
+  .subcontenedor-header-menu a {
+    margin: 10px 15px 0px 10px;
+    line-height: 35px; }
+
+.contenedor-header-menu li:hover .subcontenedor-header-menu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: black;
+  text-align: left;
+  margin-top: -1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* media query */
+@media (max-width: 320px) {
+  .contenedor-header {
+    font-size: 16px; } }
+
+@media (min-width: 321px) and (max-width: 420px) {
+  .contenedor-header {
+    font-size: 20px; } }
+
 /* portada y carrousel */
 .portada {
   margin-top: 50px;
@@ -232,6 +289,57 @@ body {
 .flip-card-back {
   transform: rotateY(180deg); }
 
+/* seccion de contacto */
+.fondo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-image: url(../imagen/secciones-html/contacto/arena-playa.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed; }
+
+form {
+  width: 450px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px; }
+  form h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: none; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#boton {
+  background: #31384a;
+  color: #fff;
+  padding: 17px; }
+
+#boton:hover {
+  cursor: pointer; }
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
+
 /* footer con el pronter */
 footer {
   width: 100%;
@@ -363,111 +471,3 @@ footer {
     font-size: 12px; }
   .pronter {
     width: 260px; } }
-
-/* seccion de contacto */
-.fondo {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-  background-image: url(../imagen/secciones-html/contacto/arena-playa.jpg);
-  background-size: 100vw 100vh;
-  background-attachment: fixed; }
-
-form {
-  width: 450px;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 7px; }
-  form h2 {
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    font-size: 24px;
-    margin-bottom: 10px; }
-
-input, textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 14px;
-  border: none; }
-
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%; }
-
-#boton {
-  background: #31384a;
-  color: #fff;
-  padding: 17px; }
-
-#boton:hover {
-  cursor: pointer; }
-
-@media (max-width: 480px) {
-  form {
-    width: 100%; } }
-
-/* header */
-.contenedor-header {
-  background-color: black;
-  display: flex;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  position: fixed;
-  z-index: 2;
-  font-size: 30px;
-  color: white; }
-  .contenedor-header img {
-    float: left;
-    max-block-size: 40px;
-    margin: 5px; }
-
-.contenedor-header-menu {
-  width: 100%;
-  font-family: "Lobster";
-  text-align: right;
-  align-self: center; }
-  .contenedor-header-menu .titulos-item {
-    position: relative;
-    display: inline-block;
-    margin: 0px 10px; }
-    .contenedor-header-menu .titulos-item a {
-      text-decoration: none;
-      color: white; }
-      .contenedor-header-menu .titulos-item a:hover {
-        color: violet; }
-
-.subcontenedor-header-menu {
-  display: none;
-  list-style: none; }
-  .subcontenedor-header-menu a {
-    margin: 10px 15px 0px 10px;
-    line-height: 35px; }
-
-.contenedor-header-menu li:hover .subcontenedor-header-menu {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  background-color: black;
-  text-align: left;
-  margin-top: -1px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-/* media query */
-@media (max-width: 320px) {
-  .contenedor-header {
-    font-size: 16px; } }
-
-@media (min-width: 321px) and (max-width: 420px) {
-  .contenedor-header {
-    font-size: 20px; } }
